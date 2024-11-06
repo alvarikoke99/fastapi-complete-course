@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
-from models import User
+from ..models import User
 from passlib.context import CryptContext
 from typing import Annotated, Optional
-from database import SessionLocal
+from ..database import SessionLocal
 from sqlalchemy.orm import Session
 from starlette import status
 from fastapi.security import OAuth2PasswordRequestForm, OAuth2PasswordBearer

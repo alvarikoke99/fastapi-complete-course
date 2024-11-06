@@ -3,8 +3,8 @@ from pydantic import BaseModel, Field
 from fastapi import APIRouter, Depends, HTTPException, Path, Body
 from sqlalchemy.orm import Session
 from typing import Annotated
-from database import SessionLocal
-from models import Todo
+from ..database import SessionLocal
+from ..models import Todo
 from .auth import get_current_user
 
 router = APIRouter()

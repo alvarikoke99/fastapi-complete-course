@@ -1,7 +1,8 @@
-from database import Base
+from .database import Base
 from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
 
-class User(Base):
+
+class Users(Base):
     __tablename__ = 'users'
 
     id = Column(Integer, primary_key=True, index=True)
@@ -15,7 +16,7 @@ class User(Base):
     phone_number = Column(String)
 
 
-class Todo(Base):
+class Todos(Base):
     __tablename__ = 'todos'
 
     id = Column(Integer, primary_key=True, index=True)
